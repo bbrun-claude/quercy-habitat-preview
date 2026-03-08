@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quercy Habitat - Construction et Rénovation de Maisons | Montauban, Caussade, Lot</title>
+<meta name="description" content="Quercy Habitat, constructeur de maisons individuelles depuis 1986 en Tarn-et-Garonne et Lot. Construction neuve, rénovation, blocs PSE. RGE Qualibat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#CA1228;--dark:#1A1A1A;--cream:#F5F2EF;--gray:#555;--light:#FAFAFA}
+body{font-family:'Source Sans 3',sans-serif;color:var(--dark);line-height:1.7}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.3}
+a{color:var(--red);text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.97);box-shadow:0 1px 8px rgba(0,0,0,0.08);padding:0 2rem}
+nav .inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px}
+nav img{height:50px;width:auto}
+nav ul{list-style:none;display:flex;gap:1.8rem}
+nav ul a{color:var(--dark);font-weight:600;font-size:0.95rem;transition:color 0.2s}
+nav ul a:hover{color:var(--red)}
+.nav-tel{color:var(--red);font-weight:700;font-size:1rem;white-space:nowrap}
+.hamburger{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer}
+
+/* HERO */
+.hero{position:relative;height:85vh;min-height:500px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(26,26,26,0.55),rgba(26,26,26,0.55)),url('img/photo2.jpg') center/cover no-repeat;margin-top:70px}
+.hero-content{max-width:750px;padding:2rem;color:#fff}
+.hero h1{font-size:2.8rem;margin-bottom:1rem;text-shadow:0 2px 8px rgba(0,0,0,0.3)}
+.hero p{font-size:1.2rem;margin-bottom:2rem;opacity:0.95}
+.btn{display:inline-block;padding:0.85rem 2rem;background:var(--red);color:#fff;font-weight:600;border-radius:4px;transition:background 0.3s;font-size:1rem}
+.btn:hover{background:#a80f20;color:#fff}
+
+/* SECTIONS */
+section{padding:5rem 2rem}
+.container{max-width:1100px;margin:0 auto}
+.section-title{text-align:center;margin-bottom:3rem}
+.section-title h2{font-size:2rem;color:var(--dark);margin-bottom:0.5rem}
+.section-title .line{width:60px;height:3px;background:var(--red);margin:0.5rem auto}
+
+/* ABOUT */
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about-text h3{font-size:1.5rem;color:var(--red);margin-bottom:1rem}
+.about-text p{color:var(--gray);margin-bottom:1rem}
+.stat-row{display:flex;gap:2rem;margin-top:1.5rem}
+.stat{text-align:center}
+.stat .num{font-family:'Sora',sans-serif;font-size:2rem;font-weight:700;color:var(--red)}
+.stat .label{font-size:0.85rem;color:var(--gray)}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.service-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.3s}
+.service-card:hover{transform:translateY(-4px)}
+.service-card img{width:100%;height:220px;object-fit:cover}
+.service-card .content{padding:1.5rem}
+.service-card h3{font-size:1.15rem;margin-bottom:0.5rem}
+.service-card p{font-size:0.95rem;color:var(--gray)}
+
+/* LABELS */
+.labels{background:var(--cream)}
+.labels-grid{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;align-items:center}
+.label-item{text-align:center;max-width:160px}
+.label-icon{width:70px;height:70px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 0.8rem;color:#fff;font-size:1.6rem;font-weight:700}
+.label-item p{font-size:0.9rem;font-weight:600;color:var(--dark)}
+
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.gallery-grid img{width:100%;height:300px;object-fit:cover;border-radius:8px}
+
+/* ZONE */
+.zone{background:var(--cream)}
+.zone-content{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.zone-list{list-style:none}
+.zone-list li{padding:0.6rem 0;border-bottom:1px solid #ddd;font-size:1rem;color:var(--gray)}
+.zone-list li::before{content:"\2713";color:var(--red);font-weight:700;margin-right:0.8rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.contact-info h3{font-size:1.3rem;color:var(--red);margin-bottom:1rem}
+.contact-info p{margin-bottom:0.8rem;color:var(--gray)}
+.contact-info strong{color:var(--dark)}
+.map-wrap{border-radius:8px;overflow:hidden;height:350px}
+.map-wrap iframe{width:100%;height:100%;border:0}
+
+/* CTA */
+.cta{background:var(--red);color:#fff;text-align:center;padding:4rem 2rem}
+.cta h2{font-size:2rem;margin-bottom:1rem}
+.cta p{margin-bottom:2rem;font-size:1.1rem;opacity:0.95}
+.btn-white{display:inline-block;padding:0.85rem 2rem;background:#fff;color:var(--red);font-weight:700;border-radius:4px;transition:background 0.3s}
+.btn-white:hover{background:var(--cream)}
+
+/* FOOTER */
+footer{background:var(--dark);color:#aaa;text-align:center;padding:2rem}
+footer p{font-size:0.85rem}
+footer a{color:var(--red)}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+  nav ul.open{display:flex}
+  .hamburger{display:block}
+  .nav-tel{display:none}
+  .hero{height:70vh;min-height:400px}
+  .hero h1{font-size:1.8rem}
+  .about-grid,.services-grid,.zone-content,.contact-grid,.gallery-grid{grid-template-columns:1fr}
+  .stat-row{flex-wrap:wrap}
+  section{padding:3rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="#"><img src="img/logo.jpg" alt="Quercy Habitat"></a>
+    <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    <ul>
+      <li><a href="#prestations">Prestations</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#zone">Zone</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:0563651794" class="nav-tel">05 63 65 17 94</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Votre constructeur de maisons depuis 1986</h1>
+    <p>Construction neuve et rénovation en Tarn-et-Garonne et Lot. Un savoir-faire familial au service de votre projet.</p>
+    <a href="#contact" class="btn">Demander un devis gratuit</a>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>Quercy Habitat, l'expérience au service de votre projet</h3>
+        <p>Fondée en 1986, l'entreprise Quercy Habitat est spécialisée dans la construction de maisons individuelles et la rénovation de bâti ancien. Implantée à Belfort-du-Quercy, Montauban et Caussade, notre équipe vous accompagne de l'étude de votre projet à la remise des clés.</p>
+        <p>Entreprise familiale dirigée par Pierre et Franck Boissel, nous mettons un point d'honneur à respecter les délais, les normes en vigueur et vos attentes. Nos certifications RGE et Qualibat attestent de notre engagement qualité.</p>
+        <div class="stat-row">
+          <div class="stat"><div class="num">40 ans</div><div class="label">d'expérience</div></div>
+          <div class="stat"><div class="num">RGE</div><div class="label">certifié</div></div>
+          <div class="stat"><div class="num">Qualibat</div><div class="label">qualifié</div></div>
+        </div>
+      </div>
+      <img src="img/photo2.jpg" alt="Agence Quercy Habitat" style="border-radius:8px">
+    </div>
+  </div>
+</section>
+
+<section id="prestations">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nos prestations</h2>
+      <div class="line"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="img/photo_ne.jpg" alt="Construction de maison neuve">
+        <div class="content">
+          <h3>Construction neuve</h3>
+          <p>Maisons individuelles sur mesure, de la conception à la livraison. Construction traditionnelle adaptée au style quercynois et aux normes basse consommation.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="img/photo_re.jpg" alt="Rénovation de maison en pierre">
+        <div class="content">
+          <h3>Rénovation</h3>
+          <p>Rénovation de maisons anciennes en pierre, briquette et bâti traditionnel. Rénovation de façade, aménagement intérieur, mise aux normes.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="img/photo1.jpg" alt="Technique blocs PSE et plancher chauffant">
+        <div class="content">
+          <h3>Techniques &amp; performance</h3>
+          <p>Mise en œuvre de blocs PSE, planchers chauffants, isolation thermique performante. Des solutions innovantes pour une maison économe en énergie.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="labels">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nos certifications</h2>
+      <div class="line"></div>
+    </div>
+    <div class="labels-grid">
+      <div class="label-item">
+        <div class="label-icon">RGE</div>
+        <p>Reconnu Garant de l'Environnement</p>
+      </div>
+      <div class="label-item">
+        <div class="label-icon">Q</div>
+        <p>Qualibat</p>
+      </div>
+      <div class="label-item">
+        <div class="label-icon">CR</div>
+        <p>Certirenov</p>
+      </div>
+      <div class="label-item">
+        <div class="label-icon">FFB</div>
+        <p>Fédération Française du Bâtiment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="realisations">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nos réalisations</h2>
+      <div class="line"></div>
+    </div>
+    <div class="gallery-grid">
+      <img src="img/photo_ne.jpg" alt="Maison neuve construction traditionnelle Quercy">
+      <img src="img/photo_re.jpg" alt="Rénovation maison en pierre Quercy">
+      <img src="img/photo2.jpg" alt="Agence Quercy Habitat Montauban">
+      <img src="img/photo1.jpg" alt="Mise en oeuvre plancher chauffant PSE">
+    </div>
+  </div>
+</section>
+
+<section class="zone" id="zone">
+  <div class="container">
+    <div class="section-title">
+      <h2>Zone d'intervention</h2>
+      <div class="line"></div>
+    </div>
+    <div class="zone-content">
+      <div>
+        <p style="color:var(--gray);margin-bottom:1.5rem">Quercy Habitat intervient dans le Tarn-et-Garonne (82) et le Lot (46). Nos agences à Montauban et Caussade nous permettent de couvrir l'ensemble du territoire.</p>
+        <ul class="zone-list">
+          <li>Montauban et agglomération</li>
+          <li>Caussade et ses environs</li>
+          <li>Belfort-du-Quercy</li>
+          <li>Cahors et Quercy Blanc</li>
+          <li>Moissac, Castelsarrasin</li>
+          <li>Lauzerte, Lafrancaise</li>
+          <li>Négrepelisse, Saint-Antonin</li>
+        </ul>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5700!2d1.38603!3d44.0416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac7c7a6d0f7c87%3A0x3069c695a0e0e4d2!2sBelfort-du-Quercy!5e0!3m2!1sfr!2sfr!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Un projet de construction ou de rénovation ?</h2>
+  <p>Contactez-nous pour une étude gratuite et personnalisée de votre projet.</p>
+  <a href="tel:0563651794" class="btn-white">Appeler le 05 63 65 17 94</a>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nous contacter</h2>
+      <div class="line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Quercy Habitat</h3>
+        <p><strong>Siège social</strong><br>10 Chemin de Pibouls<br>46230 Belfort-du-Quercy</p>
+        <p><strong>Agence Montauban</strong><br>55 Boulevard Léonce Granié<br>82000 Montauban</p>
+        <p><strong>Agence Caussade</strong><br>329 Boulevard d'Occitanie<br>82300 Caussade</p>
+        <p><strong>Téléphone</strong><br><a href="tel:0563651794">05 63 65 17 94</a></p>
+        <p><strong>Email</strong><br><a href="mailto:contact@quercy-habitat.fr">contact@quercy-habitat.fr</a></p>
+      </div>
+      <div>
+        <img src="img/photo2.jpg" alt="Agence Quercy Habitat" style="border-radius:8px;width:100%">
+        <p style="margin-top:1rem;color:var(--gray);font-size:0.9rem">SARL Quercy Habitat - SIREN 337 905 202<br>RGE - Qualibat - Certirenov - FFB</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Quercy Habitat - Construction et Rénovation de Maisons - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
